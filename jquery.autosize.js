@@ -115,7 +115,7 @@
 						height += boxOffset;
 						ta.style.overflowY = overflow;
 
-						if (original !== height) {
+						if (original !== height && original < height) {
 							ta.style.height = height + 'px';
 							if (callback) {
 								options.callback.call(ta);
